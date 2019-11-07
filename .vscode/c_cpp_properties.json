@@ -1,0 +1,29 @@
+{
+    "configurations": [
+        {
+            "browse": {
+                "databaseFilename": "",
+                "limitSymbolsToIncludedHeaders": true
+            },
+            "includePath": [
+                "/home/mcx/gaas_ws/devel/include",
+                "/home/mcx/catkin_ws/devel/include",
+                "/opt/ros/kinetic/include",
+                "/home/mcx/catkin_ws/src/airsim_ros_pkgs/include",
+                "/home/mcx/catkin_ws/src/gazebo_ros_pkgs/gazebo_plugins/include",
+                "/home/mcx/catkin_ws/src/gazebo_ros_pkgs/gazebo_ros/include",
+                "/home/mcx/catkin_ws/src/gazebo_ros_pkgs/gazebo_ros_control/include",
+                "/home/mcx/catkin_ws/src/my_demo/include",
+                "/home/mcx/catkin_ws/src/octomap_mapping/octomap_server/include",
+                "/home/mcx/catkin_ws/src/vfh/include",
+                "/usr/include"
+            ],
+            "name": "Linux",
+            "intelliSenseMode": "gcc-x64",
+            "compilerPath": "/usr/lib/ccache/gcc",
+            "cStandard": "c11",
+            "cppStandard": "c++17"
+        }
+    ],
+    "version": 4
+}

@@ -201,9 +201,10 @@ int main(int argc,char**argv)
 
 				mavros_msgs::PositionTarget pos_target;
 				pos_target.coordinate_frame=1;
-				pos_target.type_mask = 1 + 2 + 4 + /*8 + 16 + 32 +*/ 64 + 128 + 256 + 512 + 1024 + 2048;
+				pos_target.type_mask = 1 + 2 + /* 4 + 8 + 16 + 32 +*/ 64 + 128 + 256 + 512 + 1024 + 2048;
 				pos_target.velocity.x = 0.5*cos(degree);
 				pos_target.velocity.y = 0.5*sin(degree);
+				pos_target.position.z=1.5;
 				local_pos_pub.publish(pos_target);
 				ROS_INFO("go to waypoint %d vx= %f vy= %f \n",i,pos_target.velocity.x,pos_target.velocity.y);
 				ros::Time last_request = ros::Time::now();
@@ -240,9 +241,10 @@ int main(int argc,char**argv)
 			    }
             //这里发布00防止转机头指北
 			    pos_target.coordinate_frame=1;
-			    pos_target.type_mask = 1 + 2 + 4 + /*8 + 16 + 32 +*/ 64 + 128 + 256 + 512 + 1024 + 2048;
+			    pos_target.type_mask = 1 + 2 + /* 4 + 8 + 16 + 32 +*/ 64 + 128 + 256 + 512 + 1024 + 2048;
 			    pos_target.velocity.x = 0;
 			    pos_target.velocity.y = 0;
+				pos_target.position.z=1.5;
 			    local_pos_pub.publish(pos_target);
 		    }
 
